@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="img-box"></div>
+      <div class="content">
+        <h1>
+          Hey,<br />
+          I am Jennifer
+        </h1>
+        <p>
+          Meet Jennifer, a charismatic and vibrant young woman who lights up
+          every room she enters. With her magnetic personality and warm smile,
+          she effortlessly captivates the hearts of those around her. Jennifer's
+          zest for life is contagious, and her adventurous spirit constantly
+          propels her towards new and exciting experiences.
+        </p>
+        <a href="#"><div class="button">Know More</div></a>
+        <div class="cursor"></div>
+      </div>
+    </header>
+    <script>
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.pageX + "px";
+        cursor.style.top = e.pageY + "px";
+      });
+    </script>
+  </body>
+</html>
